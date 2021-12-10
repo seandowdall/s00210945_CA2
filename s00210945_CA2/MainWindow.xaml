@@ -1,0 +1,23 @@
+﻿<Window x:Class="s00210945_CA2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:s00210945_CA2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="lbxAllActivities" HorizontalAlignment="Left" Height="210" Margin="108,83,0,0" VerticalAlignment="Top" Width="249" SelectionChanged="LbxAllActivities_SelectionChanged"/>
+        <TextBlock x:Name="tblkActivityDescription" HorizontalAlignment="Left" Margin="108,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="98" Width="249"/>
+        <ListBox x:Name="lbxSelectedActivities" HorizontalAlignment="Left" Height="210" Margin="523,83,0,0" VerticalAlignment="Top" Width="240"/>
+        <Button x:Name="btnAdd" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="407,83,0,0" VerticalAlignment="Top" Width="75" Height="39" Click="BtnAdd_Click"/>
+        <Button x:Name="btnReturn" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="407,166,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="BtnReturn_Click"/>
+        <RadioButton x:Name="rbLand" Content="Land" HorizontalAlignment="Left" Margin="22,83,0,0" VerticalAlignment="Top" GroupName="rbGroup" Checked="Rb_Checked"/>
+        <RadioButton x:Name="rbAll" Content="All" HorizontalAlignment="Left" Margin="22,42,0,0" VerticalAlignment="Top" GroupName="rbGroup" Checked="Rb_Checked"/>
+        <RadioButton x:Name="rbAir" Content="Air" HorizontalAlignment="Left" Margin="22,166,0,0" VerticalAlignment="Top" GroupName="rbGroup" Checked="Rb_Checked"/>
+        <RadioButton x:Name="rbWater" Content="Water" HorizontalAlignment="Left" Margin="22,126,0,0" VerticalAlignment="Top" GroupName="rbGroup" Checked="Rb_Checked"/>
+        <TextBlock x:Name="tBTitle" HorizontalAlignment="Left" Margin="108,14,0,0" TextWrapping="Wrap" Text="Activity Planner" VerticalAlignment="Top" Height="38" Width="249" Foreground="#FF002EFF" FontSize="21"/>
+        <TextBlock x:Name="tblckSelectedActivities" HorizontalAlignment="Left" Margin="523,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="240"><Run Text="Selected A"/><Run Text="c"/><Run Text="tivities"/></TextBlock>
+        <TextBlock x:Name="tblckAllActivities" HorizontalAlignment="Left" Margin="108,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="240"><Run Text="All"/><Run Text=" A"/><Run Text="c"/><Run Text="tivities"/></TextBlock>
+    </Grid>
+</Window>
